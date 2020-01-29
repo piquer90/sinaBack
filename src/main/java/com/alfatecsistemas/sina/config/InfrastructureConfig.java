@@ -35,8 +35,9 @@ public class InfrastructureConfig {
 		
 		return builder
         	.setType(EmbeddedDatabaseType.H2)
-        	//.addScript("sql/create-db.sql")
-        	//.addScript("sql/insert-data.sql")
+			.setName("db")
+        	.addScript("sql/create-db.sql")
+        	.addScript("sql/insert-data.sql")
         	.build();
 	}
 
