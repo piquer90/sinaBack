@@ -1,6 +1,6 @@
 # Default ignored files
 # Intellij
-.idea/
+.idea/*
 *.iml
 *.iws
 
