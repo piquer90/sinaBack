@@ -37,7 +37,7 @@ public class ProfessionalDaoImpl implements ProfessionalDao {
             predicates.add(cb.equal(root.get("profSurname2"), filterProfessionals.getSurname2()));
         }
         if (filterProfessionals.getIdValue() != null) {
-            predicates.add(cb.like(root.get("idValue"), "%" + filterProfessionals.getIdValue() + "%"));
+            predicates.add(cb.like(root.get("profIdValue"), "%" + filterProfessionals.getIdValue() + "%"));
         }
         cq.where(predicates.toArray(new Predicate[0]));
 
